@@ -1,0 +1,110 @@
+:root{
+  --bg: #f9f9f9;
+  --card: #ffffff;
+  --text: #111827;
+  --accent: #ffffff;
+}
+
+[data-theme="dark"]{
+  --bg: #0b0f12;
+  --card: #0f1720;
+  --text: #e6eef6;
+  --accent: #38bdf8;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+h2{
+color:rgb(153, 0, 33, 0.875);
+}
+
+h3{ 
+color:#1a5b77;
+}
+
+.container{max-width:1000px;margin:0 auto;padding:0 1rem}
+.header{background:rgb(4, 28, 47);padding:1rem 0;position:sticky;top:0;z-index:40}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand a{font-weight:700;color:white;text-decoration:none;font-size:1.25rem; margin-right: 20px;}
+.nav-links{display:flex;gap:1rem;align-items:center}
+.nav-links a{color:var(--text);text-decoration:none;padding:.60rem .90rem;border-radius:6px}
+.nav-links a:hover{background:rgb(18, 122, 166);color: white;transform: scale(1.20)}
+.nav-links a:active{background-color: rgb(4,28,47);}
+.nav-btn{background:var(--accent);color:rgb(13, 4, 4);padding:.4rem .6rem;text-decoration:none;border-radius:6px}
+.submit-btn{background:rgb(22, 84, 134);color:white;border:1px solid rgba(0,0,0,0.06); padding:10px; border-radius: 5px}
+
+.controls{display:flex;gap:.5rem;align-items:center}
+.theme-toggle{background:transparent;border:none;font-size:1.1rem;cursor:pointer}
+.hamburger{display:none;background:transparent;border:none;font-size:1.2rem;cursor:pointer}
+
+/* Sections */
+.section{padding:4rem 0}
+.home-grid{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:center}
+.intro h1{color:rgba(153, 0, 33, 0.875);font-size:2rem;margin-bottom:.5rem}
+.intro .accent{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:white;padding:.6rem 1rem;border-radius:8px;text-decoration:none;margin-right:.5rem}
+.btn.ghost{background:rgb(4, 28, 47);color:white;border:1px solid rgba(0,0,0,0.06)}
+.btn.ghost:hover{background:rgb(18, 122, 166);color: white;transform: scale(1.20)}
+.hero{display:flex;justify-content:center;align-items:center}
+.avatar{font-size:4rem;}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem}
+.card{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+.card h3{margin-top:0}
+.card a{color:rgb(83, 137, 182);text-decoration:none}
+
+/* About / Skills */
+.skills{list-style:none;padding-left:0;display:flex;gap:1rem;flex-wrap:wrap}
+.skills li{background:rgba(137, 23, 50, 0.4);padding:.4rem .6rem;border-radius:999px}
+
+/* experience / tasks */
+.tasks{list-style:none;padding-left:0;display:flex;gap:1rem;flex-wrap:wrap}
+.tasks li{background:rgba(137, 23, 50, 0.4);padding:.4rem .6rem;border-radius:999px}
+
+/* Contact form */
+.contact-form{display:flex;flex-direction:column;gap:.6rem;max-width:600px}
+.contact-form input,.contact-form textarea{padding:.6rem;border-radius:6px;border:1px solid rgba(0,0,0,0.08);background:transparent;color:var(--text)}
+.success{color:green}
+
+/* Footer */
+.footer{text-align:center;padding:2rem 0;color:var(--text)}
+
+/* Responsive */
+@media (max-width:900px){
+  .home-grid{grid-template-columns:1fr; text-align:center}
+  .cards{grid-template-columns:1fr}
+  .hamburger{display:inline-block}
+  .nav-links{position:fixed;right:0;top:0;height:100vh;width:250px;background:var(--bg);flex-direction:column;padding:3rem 1rem;transform:translateX(100%);transition:transform .25s}
+  .nav-links.open{transform:translateX(0)}
+  .nav-links a{padding:.75rem 0}
+}
+
+/* small devices */
+@media (max-width:480px){
+  .intro h1{font-size:1.5rem}
+}
+
+.profile-image {
+  width: 5000px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
