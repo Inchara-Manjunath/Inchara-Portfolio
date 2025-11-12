@@ -19,6 +19,12 @@ const projects = [
     repo: "https://github.com/Inchara-Manjunath/Movie-Finder.git",
     live: "https://movie-finder1.netlify.app",
   },
+  {
+    title: "Portfolio website",
+    desc: "Designed and developed a responsive personal portfolio website to showcase projects, skills, and contact information, with smooth navigation and modern UI/UX using animations and component-based design.",
+    repo: "https://github.com/Inchara-Manjunath/Inchara-Portfolio.git",
+    live: "https://inchara-portfolio.onrender.com",
+  },
 ];
 
 export default function Projects() {

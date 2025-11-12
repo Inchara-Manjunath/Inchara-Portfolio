@@ -6,7 +6,7 @@ export default function Home() {
     <section className="home section" data-aos="fade-up">
       <div className="container home-grid">
         <div className="intro">
-          <h1>Hello, I'm Inchara M<span className="accent">Inchara Manjunath</span></h1>
+          <h1>Hello, I'm Inchara M</h1>
           <p><strong>Hi, I'm Inchara M,</strong> a passionate Frontend Developer who loves turning 
             ideas into interactive, user-friendly web experiences. I specialize in React.js, 
             JavaScript, HTML, and CSS, with a focus on creating clean, responsive, and accessible designs.</p>
