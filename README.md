@@ -1,12 +1,40 @@
-React Portfolio - Ready-to-use template
+# 🌐 Portfolio Website
 
-How to run locally:
-1. unzip and open the folder in terminal.
-2. Run: npm install
-3. Run: npm run dev
-4. Open the dev URL shown by Vite (usually http://localhost:5173)
+A responsive and modern personal portfolio website built using **React.js** and **Vite**, designed to showcase my projects, skills, and achievements with smooth navigation, animations, and a clean UI.
 
-Notes:
-- Replace /src/pages content, update projects list and links.
-- Replace resume.pdf (in project root) with your real resume.
-- This template uses AOS for scroll animations. Install deps with npm install.
+## 🚀 Live Demo
+🔗 [View Portfolio](https://inchara-portfolio.onrender.com)
+
+---
+
+## 🧠 Features
+- ⚡ **Responsive Design:** Works seamlessly on all screen sizes.
+- 🎨 **Modern UI/UX:** Built with Tailwind CSS for clean and consistent styling.
+- 💼 **Projects Section:** Displays deployed projects with GitHub and live links.
+- 🧭 **Smooth Navigation:** Includes animated scroll and transitions.
+- 🌍 **Deployed on Render:** Optimized for fast loading and easy deployment.
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Vite, JavaScript, HTML, CSS
+- **Version Control:** Git, GitHub  
+- **Deployment:** Render  
+
+---
+
+## ⚙️ Installation and Setup
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/Portfolio-Website.git
+
+# Navigate to the project directory
+cd Portfolio-Website
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
